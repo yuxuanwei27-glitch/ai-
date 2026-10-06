@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
       VALUES (${body.email}, ${hash})
     `;
     const mail = await sendVerificationEmail(body.email, code);
-    return NextResponse.json({ ok: true, ...mail });
+    return NextResponse.json(mail);
   } catch (e: any) {
     return NextResponse.json({ error: String(e?.message || e) }, { status: 400 });
   }
