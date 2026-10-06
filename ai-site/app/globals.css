@@ -16,7 +16,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body { height: 100%; }
 body { font-family: var(--font); background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.6; font-variant-numeric: tabular-nums; }
-body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: -1;
   background:
     radial-gradient(1100px 420px at 78% -6%, rgba(30,122,70,.14), transparent 62%),
     radial-gradient(900px 500px at -6% 108%, rgba(201,162,39,.06), transparent 60%),
@@ -55,7 +55,7 @@ body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-i
 .bar i.amber { background: linear-gradient(90deg, #6d5718, var(--amber)); }
 .quota .note { font-size: 11px; color: var(--text-faint); line-height: 1.5; }
 
-.main { flex: 1; margin-left: 260px; min-height: 100vh; padding: 76px 28px 40px; }
+.main { flex: 1; margin-left: 0; min-height: 100vh; padding: 76px 28px 40px; }
 @media (max-width: 768px) { .main { margin-left: 0; padding: 76px 16px 32px; } }
 .view { display: none; max-width: 1280px; margin: 0 auto; }
 .view.active { display: block; animation: rise .28s ease; }
