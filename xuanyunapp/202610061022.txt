@@ -1,0 +1,26 @@
+xuanyun-app/
+├── package.json
+├── next.config.mjs
+├── postcss.config.mjs
+├── tsconfig.json
+├── .env.example          ← 注意前面有个点
+├── middleware.ts
+├── lib/
+│   ├── db.ts
+│   ├── auth.ts
+│   ├── email.ts
+│   └── ai.ts
+└── app/
+    ├── layout.tsx
+    ├── page.tsx
+    ├── globals.css
+    ├── login/page.tsx
+    ├── register/page.tsx
+    ├── dashboard/page.tsx
+    └── api/
+        ├── auth/register/route.ts
+        ├── auth/verify/route.ts
+        ├── auth/login/route.ts
+        ├── auth/me/route.ts
+        ├── ai/config/route.ts
+        └── ai/chat/route.ts
